@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
+   /* global selector  */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    border:none;
+    outline:none;
+
+}
+
+/* html  */
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+
+}
+
+/* body  */
+
+body{
+    background-color:#eee;
+}
+
+/* header css start  */
+
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:999;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:2rem 9%;
+    background:#fff;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+.header .logo{
+    font-size:2.5rem;
+    font-weight:bolder;
+    color:black;
+}
+.header .logo i{
+    color:orange;
+
+}
+.header .navbar a{
+    font-size:1.7rem;
+    margin: 0 1rem;
+    color:black;
+}
+.header .navbar a:hover{
+    color:orange;
+}
+.header .icons div{
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    border-radius:.5rem;
+    background:#eee;
+    color:black;
+    font-size:2rem;
+    margin-right: .3rem;
+    text-align:center;
+    cursor:pointer;
+}
+.header .icons div:hover{
+    background: orange;
+    color:#fff;
+}
+
+/* header css end  */
+
+
+
+/* home css start  */
+
+
+section{
+    padding:2rem 1.5%;
+
+}
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:black;
+}
+.heading span{
+    background: orange;
+    color:#fff;
+    display:inline-block;
+    padding:1rem 3rem;
+    clip-path:polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%); 
+}
+/* overall buttons  */
+.btn{
+    margin-top:1rem;
+    display:inline-block;
+    padding:1.5rem 3rem;
+    font-size:1.7rem;
+    border-radius:.5rem;
+    border:.2rem solid black;
+    color:black;
+    cursor:pointer;
+    background:none;
+
+}
+.btn:hover{
+    background: orange;
+}
+
+
+
+
+
+.home{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: url(./240_F_217216886_zmsKmNGEcGGs5cKgmL6vM6aCUfzY9OQy.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top:17rem;
+    padding-bottom:10rem;
+}
+.home .content{
+    text-align:center;
+    width:60rem;
+}
+.home .content h3{
+    color:black;
+    font-size: 3rem;
+}
+.home .content h3 span{
+    color:orange;
+    font-size: 3rem;
+}
+.home .content p{
+    color:gray;
+    font-size: 1.3rem;
+    padding:1rem;
+    line-height:1.8;
+}
+/* home css end  */
+
+
+
+
+/* features css start  */
+
+
+
+.features .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(29rem,1fr));
+    gap:1.5rem;
+}
+.box img{
+    height:25rem;
+    width:25rem;
+}
+.features .container .box{
+    padding:2.5rem 2rem;
+    background: #fff;
+    outline:.5rem solid rgba(0,0,0,.2) ;
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+.features .container .box:hover{
+    outline:.5rem solid rgba(0,0,0,.9) ;
+    outline-offset: 0rem;
+
+}
+.features .container .box img{
+    margin: 1rem 0;
+    height:17rem; 
+}
+.features .container .box h3{
+    font-size:2.5rem;
+    line-height: 1.8;
+    color: balck;
+}
+.features .container .box p{
+    font-size:1.5rem;
+    line-height: 1.8;
+    color: gray;
+    padding:1rem 0;
+}
+
+/* features css end  */
+
+
+
+/* products css start  */
+.wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap:1rem;
+}
+.products .product-slider{
+    padding:.5rem;
+    
+}
+.products .product-slider .box{
+    background: #fff;
+    border-radius: .5rem; 
+    text-align: center;
+    padding: 2.5rem 2rem;
+    outline-offset:-1rem;
+    outline: .5rem solid rgba(0,0,0,.2);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1) ;
+    margin-right:2px;
+    margin-top: 5px;
+}
+.products .product-slider .box:hover{
+    outline-offset: 0rem;
+    outline:.5rem solid rgba(0,0,0,.9) ;
+}
+.products .product-slider .box img{
+    width:70%;
+    height:16rem;
+} 
+.products .product-slider .box h3{
+    font-size: 2.5rem;
+    color:black;
+}
+.products .product-slider .box .price{
+    font-size: 2rem;
+    color: gray;
+    padding: .5rem 0;
+
+}
+.products .product-slider .box .stars{
+    font-size: 1.7rem;
+    color:orange;
+    padding: .5rem 0;
+}
+
+
+/* products css end  */
+
+
+/* categories css start  */
+
+.categories .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap:1rem;
+}
+.categories .box-container .box{
+    padding: 3rem 2rem ;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1) ;
+    outline-offset: -1rem;
+    outline: .5rem solid rgba(0,0,0,.1);
+    text-align:center;
+}
+.categories .box-container .box:hover{
+    outline-offset: 0rem;
+    outline: .5rem solid rgba(0,0,0,.9);
+}
+.categories .box-container .box img{
+    width:99%;
+}
+.categories .box-container .box h3{
+    font-size: 2rem;
+    color: black;
+    line-height: 1.8;
+}
+.categories .box-container .box p{
+    font-size: 1.7rem;
+    color: gray;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* categories css end  */
+
+
+/* review css start  */
+
+
+.wrap{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+    gap:1.5rem;
+}
+.review .review-slide{
+    padding: 1rem;
+}
+.review .review-slide .box{
+    padding: 3rem 2rem ;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1) ;
+    outline-offset: -1rem;
+    outline: .5rem solid rgba(0,0,0,.1);
+    text-align:center;
+
+}
+.review .review-slide .box:hover{
+    outline-offset: 0rem;
+    outline: .5rem solid rgba(0,0,0,.9);
+}
+.review .review-slide .box img{
+    width:15rem;
+    height:13rem;
+    border-radius: 50%;
+}
+.review .review-slide .box h3{
+    color:black;
+    font-size: 2.2rem;
+    padding-bottom: .5rem;
+
+}
+.review .review-slide .box .stars{
+    color:orange;
+    font-size: 1.7rem;
+}
+.review .review-slide .box p{
+    padding: 1rem;
+    line-height: 1.5;
+    color:gray;
+    font-size: 1.5rem;
+}
+
+/* review css end  */
+
+
+/* blogs css start  */
+
+.blogs .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(29rem,1fr));
+    gap:1.5rem;
+}
+.blogs .box-container .box{
+    padding: 2rem 2rem ;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1) ;
+    outline-offset: -1rem;
+    outline: .5rem solid rgba(0,0,0,.1);
+    /* text-align:center; */
+    overflow: hidden;
+
+}
+.blogs .box-container .box:hover{
+    outline-offset: 0rem;
+    outline: .5rem solid rgba(0,0,0,.9);
+}
+.blogs .box-container .box img{
+    height:25rem;
+    width:100%;
+    object-fit:cover;
+}
+.blogs .box-container .box .content{
+    padding: 1rem;
+}
+.blogs .box-container .box .content .icons{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom:2px solid gray ;
+    opacity: .8;
+}
+.blogs .box-container .box .content .icons a{
+    color: gray;
+    font-size: 1.5rem;
+}
+.blogs .box-container .box .content .icons a:hover{
+    color:black;
+}
+.blogs .box-container .box .content .icons a i{
+    color: orange;
+    padding-right: .5rem;
+}
+.blogs .box-container .box .content h3{
+    line-height: 1.2;
+    color:black;
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+.blogs .box-container .box .content p{
+    line-height: 1.7;
+    color:gray;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+/* blogs css end  */
+
+
+
+/* footer css starts  */
+
+.footer{
+    background: white;
+}
+.footer .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+    gap:1.5rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+.footer .box-container .box h3 i{
+    color:orange;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    color: orange;
+    padding-right: .5rem;
+}
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+
+}
+.footer .box-container .box p{
+    line-height: 1.7;
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.footer .box-container .box .share{
+    display:flex;
+}
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 2rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: .2rem;
+    background: #fff;
+    text-align: center;
+    border:1px solid black;
+}
+
+.footer .box-container .box .share a:hover{
+    background: orange;
+    color:#fff;
+
+}
+.footer .box-container .box .email{
+    width:100%;
+    margin:.7rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height:19rem;
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:black;
+    border-top:1px solid gray;
+}
+.footer .credit span{
+    color:orange;
+}
+
+/* footer css end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query start */
+
+
+
+@media (max-width:991px){
+    html{
+        font-size:55%;
+    }
+    
+    .header{
+        padding:2rem;
+    }
+    .section{
+        padding:2rem;
+    }
+   
+}
+@media (max-width:768px){
+    html{
+        font-size:55%;
+    }
+    .navbar{
+        display:none;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+    .heading{
+        font-size:2.5rem;
+    }
+    .navbar{
+        display:none;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+/* media query end  */
